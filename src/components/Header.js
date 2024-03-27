@@ -20,9 +20,9 @@ const Header = () => {
         </h1>
       </div>
         {/* Header*/}
-        <div className="relative z-10 flex justify-between items-center p-10 bg-transparent text-white">
+        <div className="relative z-10 flex justify-between items-center p-6 bg-transparent text-white">
           <div className='sm:absolute'>
-            <img src={logo} alt="Logo" className="h-10 w-auto " />
+            <img src={logo} alt="Logo" className="h-6 w-auto md:h-8 md:w-auto " />
           </div>
 
           {/* Navigation Buttons */}
