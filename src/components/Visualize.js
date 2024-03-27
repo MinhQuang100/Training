@@ -18,7 +18,7 @@ const HowCanWeHelp = () => {
     }
   };
   return (
-    <div className="container mx-auto py-12 gap-x-24 flex flex-col flex-col-reverse md:flex-row">
+    <div className="container mx-auto px-2 py-12 gap-x-8 flex flex-col flex-col-reverse md:flex-row">
       <div className=" md:w-1/2 text-[#564E4E]  md:ml-4 text-left">
         <div className='pb-10'>
           <h2 className="text-2xl font-bold mb-6">Visualize your ideas with us</h2>
@@ -40,8 +40,10 @@ const HowCanWeHelp = () => {
             </li>
           ))}
         </ul>
-        <a className='text-[#F79489]' href="#">See more catagory</a>
+        <button className='text-[#F79489]'>See more catagory</button>
+        
       </div>
+      <div className='sm:border-2 sm:h-[300px] sm:border-[#FADCD9]'></div>
       <div className="md:w-1/2 mx-auto md:mr-0 mb-8 md:mb-0">
         <img src={img} alt="Mask" className="object-contain" />
       </div>

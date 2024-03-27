@@ -38,7 +38,7 @@ const products = [
 
 const FeaturedProducts = () => {
   return (
-    <div className="container mx-auto py-12">
+    <div className="container mx-auto py-12 p-6">
       <h2 className="text-2xl md:text-4xl font-bold mb-6">Featured Products</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {products.map(product => (

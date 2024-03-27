@@ -3,7 +3,7 @@ import logo from '../images/logo.png';
 
 const Footer = () => {
   return (
-    <footer className="py-8 bg-gradient-to-r from-black to-gray-700 text-white sm:h-[600px]">
+    <footer className="py-8 bg-gradient-to-r from-black to-gray-700 text-white h-full">
       <div className="container pt-20 mx-auto flex flex-col gap-16 pl-6 lg:flex-row justify-between ">
         
         <img src={logo} alt="Logo" className="h-10 max-w-28 w-auto " />
@@ -34,7 +34,7 @@ const Footer = () => {
                 <div>Github</div>
         </div>
       </div>
-      <div className="text-center pt-60 mt-4">Copyright 2021</div>
+      <div className="text-center pt-60 mt-4">Copyright 2021 ©shady rhymes</div>
     </footer>
   );
 };
