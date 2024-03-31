@@ -29,13 +29,13 @@ const comments = [
 
 const Comment = () => {
   return (
-    <div className="p-16 mx-auto text-[#564E4E] bg-[linear-gradient(152deg,_#fff,_#FAF5F2_42%)]">
-      <h2 className="text-3xl font-bold text-center mb-8">What they say about our services</h2>
-      <div className="grid grid-cols-1 sm:p-14 md:grid-cols-3 mt-16 gap-8">
+    <div className="p-16 mx-auto text-[#564E4E] mt-16 bg-[linear-gradient(152deg,_#fff,_#FAF5F2_42%)]">
+      <h2 className="text-3xl font-bold text-center mb-4">What they say about our services</h2>
+      <div className="grid grid-cols-1 sm:p-16 md:grid-cols-3 mt-8 gap-8">
         {comments.map((comment, index) => (
           <div key={index} className="sm:p-4 rounded-lg flex flex-col gap-y-6 sm:gap-y-10">
             <h3 className='text-2xl text-left'>{comment.title}</h3>
-            <p className="text-left">{comment.text}</p>
+            <p className="text-left grow">{comment.text}</p>
             <div className="flex items-center mb-4">
               <img className="w-12 h-12 rounded-full mr-4" src={comment.image}  alt="User" />
               <div>

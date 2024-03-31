@@ -3,7 +3,7 @@ import logo from '../images/logo.png';
 
 const Footer = () => {
   return (
-    <footer className="py-8 bg-gradient-to-r from-black to-gray-700 text-white h-full">
+    <footer className="py-8 mt-16 bg-gradient-to-l from-black to-[#4B4B4B] text-white h-full">
       <div className="container pt-20 mx-auto flex flex-col gap-16 pl-6 lg:flex-row justify-between ">
         
         <img src={logo} alt="Logo" className="h-10 max-w-28 w-auto " />
