@@ -40,7 +40,7 @@ const Benefits = () => {
           <div key={benefit.id} className="text-left bg-white rounded-lg  hover:drop-shadow-2xl overflow-hidden hover:border transition duration-300 hover:border-glow hover:border-[#FADCD9]">
             <img src={benefit.image} alt={benefit.name} className="w-16 h-16 object-cover ml-4 mt-4" />
             <div className="p-4">
-              <h3 className="text-lg font-semibold mb-2">{benefit.name}</h3>
+              <h3 className="text-lg font-medium mb-2">{benefit.name}</h3>
               <p className="text-gray-600 mb-2">{benefit.description}</p>
               <button className='text-[#F79489]'>more info</button>
             </div>
