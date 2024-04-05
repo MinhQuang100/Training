@@ -12,30 +12,30 @@ const Header = () => {
     
     <header className="relative h-[406px] md:h-[1080px]">
       {/* Banner */}
-      <div className="absolute inset-0 z-0 bg-cover bg-center" style={{ backgroundImage: `url(${banner})`, filter: 'brightness(0.75)' }}></div>
+      <div className="absolute inset-0 z-0 bg-cover bg-center" style={{ backgroundImage: `url(${banner})`, filter: 'brightness(0.6)' }}></div>
       <div className="absolute inset-0 bottom-20 sm:bottom-60 flex items-center justify-center">
-        <h1 className="text-white text-center "> 
-          <span className='leading-[1rem] sm:text-5xl font-semibold text-lg'>Make Your Interior More <br/> Minimalistic & Modern <br/><br/></span>
-          <span className="sm:text-base text-xs">Bringing interiors to life, understanding the person or people <br/> living in a home is far greater need in design.</span>
+        <h1 className="text-white text-center flex sm:w-1/2 w-2/3 items-center flex-col"> 
+          <span className='sm:text-5xl leading-[1rem] font-semibold text-lg'>Make Your Interior More <br/><br/>Minimalistic & Modern <br/><br/></span>
+          <span className="sm:text-base sm:w-2/3 text-xs ">Bringing interiors to life, understanding the person or people living in a home is far greater need in design.</span>
         </h1>
       </div>
         {/* Header*/}
         <div className="relative z-10 flex justify-between items-center p-6 bg-transparent text-white">
           <div className='sm:absolute'>
-            <img src={logo} alt="Logo" className="h-6 w-auto md:h-8 md:w-auto " />
+            <img src={logo} alt="Logo" className="h-6 w-auto md:h-8 md:w-auto" />
           </div>
 
           {/* Navigation Buttons */}
           <div className="hidden md:flex text-lg justify-center flex-grow gap-x-16">
-            <button className="text-white hover:scale-150 relative flex gap-x-2" onClick={toggleMenu}>Furniture
+            <button className="text-white hover:scale-125 relative flex gap-x-2" onClick={toggleMenu}>Furniture
               <span>
                 <svg  width="9" height="25" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 1L4.5 4L8 1" stroke="white"/></svg>
               </span>
             </button>
-            <button className="text-white hover:scale-150">Shops</button>
-            <button className="text-white hover:scale-150">About Us</button>
-            <button className="text-white hover:scale-150">Contact</button>
+            <button className="text-white hover:scale-125">Shops</button>
+            <button className="text-white hover:scale-125">About Us</button>
+            <button className="text-white hover:scale-125">Contact</button>
           </div>
           <button className="md:hidden" onClick={toggleMenu}>
               <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">

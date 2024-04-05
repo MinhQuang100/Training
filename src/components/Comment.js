@@ -29,18 +29,18 @@ const comments = [
 
 const Comment = () => {
   return (
-    <div className="p-16 mx-auto text-[#564E4E] mt-16 bg-[linear-gradient(152deg,_#fff,_#FAF5F2_42%)]">
-      <h2 className="text-3xl font-bold text-center mb-4">What they say about our services</h2>
+    <div className="sm:p-16 p-6 mx-auto text-[#564E4E] mt-16 bg-[linear-gradient(152deg,_#fff,_#FAF5F2_42%)]">
+      <h2 className="sm:text-3xl text-lg font-bold text-center mb-4">What they say about our services</h2>
       <div className="grid grid-cols-1 sm:p-16 md:grid-cols-3 mt-8 gap-8">
         {comments.map((comment, index) => (
-          <div key={index} className="sm:p-4 rounded-lg flex flex-col gap-y-6 sm:gap-y-10">
-            <h3 className='text-2xl text-left'>{comment.title}</h3>
-            <p className="text-left grow">{comment.text}</p>
+          <div key={index} className="sm:p-4 rounded-lg flex flex-col gap-y-2 sm:gap-y-10">
+            <h3 className='sm:text-2xl text-sm font-medium text-left'>{comment.title}</h3>
+            <p className="sm:text-lg text-xs text-left grow">{comment.text}</p>
             <div className="flex items-center mb-4">
-              <img className="w-12 h-12 rounded-full mr-4" src={comment.image}  alt="User" />
+              <img className="sm:w-12 sm:h-12 w-8 h-8 rounded-full mr-4" src={comment.image}  alt="User" />
               <div>
-                <h3 className="text-lg text-left font-semibold">{comment.user}</h3>
-                <p className="text-left text-sm">{comment.job}</p>
+                <h3 className="sm:text-lg text-left text-sm font-medium">{comment.user}</h3>
+                <p className="sm:text-sm text-left text-xs font-light">{comment.job}</p>
               </div>
             </div>
           </div>
