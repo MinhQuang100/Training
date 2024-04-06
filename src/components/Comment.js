@@ -31,7 +31,7 @@ const Comment = () => {
   return (
     <div className="sm:p-16 p-6 mx-auto text-[#564E4E] mt-16 bg-[linear-gradient(152deg,_#fff,_#FAF5F2_42%)]">
       <h2 className="sm:text-3xl text-lg font-bold text-center mb-4">What they say about our services</h2>
-      <div className="grid grid-cols-1 sm:p-16 md:grid-cols-3 mt-8 gap-8">
+      <div className="grid grid-cols-1 sm:p-16 lg:grid-cols-3 mt-8 gap-8">
         {comments.map((comment, index) => (
           <div key={index} className="sm:p-4 rounded-lg flex flex-col gap-y-2 sm:gap-y-10">
             <h3 className='sm:text-2xl text-sm font-medium text-left'>{comment.title}</h3>

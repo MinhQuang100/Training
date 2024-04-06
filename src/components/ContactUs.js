@@ -3,14 +3,14 @@ import groupImage from '../images/Group.png';
 
 const ContactUs = () => {
   return (
-    <div className="container mt-12 mx-auto flex flex-col p-6 md:flex-row items-center justify-between py-10">
-      <div className="md:mr-10 mb-6 md:mb-0 lg:w-1/2">
+    <div className="container mt-12 mx-auto flex flex-col p-6 md:flex-row justify-between py-10">
+      <div className="md:mr-10 mb-6 md:mb-0 md:w-1/2">
         <img src={groupImage} alt="Group" className="rounded-lg" />
       </div>
       {/* Contact Form */}
       <div className="flex flex-col mb-12 text-[#564E4E] md:w-1/2 sm:gap-y-10 gap-y-6">
-        <h1 className="text-left text-medium text-sm md:text-4xl">Make your room feel homey</h1>
-        <p className='text-left  text-xs md:text-lg'> We help people not only to make the room at home better, but we help people to feel a more homey and comfortable room, you don’t have to worry about the result because of these interiors are made by people who are professionals in their dields with an elegant and lucuriois style and with premium quality materials 
+        <h1 className="text-left text-medium text-sm lg:text-4xl">Make your room feel homey</h1>
+        <p className='text-left text-xs lg:text-lg'> We help people not only to make the room at home better, but we help people to feel a more homey and comfortable room, you don’t have to worry about the result because of these interiors are made by people who are professionals in their dields with an elegant and lucuriois style and with premium quality materials 
            <br/><br/> Contact us if you are interested in working with us </p>
         <div className="flex items-center lg:w-1/2 w-3/4 lg:h-10 h-9 border border-[#FADCD9] text-[#FEFCFB] rounded-full overflow-hidden relative">
           <input
